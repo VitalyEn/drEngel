@@ -1,0 +1,19 @@
+{
+  "name": "drengel",
+  "version": "1.0.0",
+  "description": "personal doctors site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitalyEn/drEngel.git"
+  },
+  "author": "Vitaly Engel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitalyEn/drEngel/issues"
+  },
+  "homepage": "https://github.com/VitalyEn/drEngel#readme"
+}
