@@ -94,6 +94,20 @@
 	    return del('app/images/dest/**/*', { force: true }) // Удаляем все содержимое папки "app/images/dest/"
 	}
 
+	function buildcopy() {
+	    return src([ // Выбираем нужные файлы
+	            'app/css/**/*.min.css',
+	            'app/js/**/*.min.js',
+	            'app/images/dest/**/*',
+	            'app/**/*.html',
+	        ], { base: 'app' }) // Параметр "base" сохраняет структуру проекта при копировании
+	        .pipe(dest('dist')) // Выгружаем в папку с финальной сборкой
+	}
+
+	function cleandist() {
+	    return del('dist/**/*', { force: true }) // Удаляем все содержимое папки "dist/"
+	}
+
 	// Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
 	exports.browsersync = browsersync;
 
@@ -108,6 +122,9 @@
 
 	// Экспортируем функцию cleanimg() как таск cleanimg
 	exports.cleanimg = cleanimg;
+
+	// Создаем новый таск "build", который последовательно выполняет нужные операции
+	exports.build = series(cleandist, styles, scripts, images, buildcopy);
 
 	// Экспортируем дефолтный таск с нужным набором функций
 	exports.default = parallel(styles, scripts, browsersync, startwatch);
