@@ -1,0 +1,29 @@
+.form__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  margin: 0;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-top: 57px;
+    padding-left: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-left: 110px;
+    margin: 0 auto;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

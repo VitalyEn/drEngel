@@ -1,0 +1,30 @@
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $button-color;
+  background-color: $background-button;
+  border: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 254px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+}
+
+.button:hover {
+  background-color: $background-button-hover;
+}
+
+.button:active {
+  color: $button-color-active;
+}
