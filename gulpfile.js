@@ -1,5 +1,5 @@
 	// Определяем переменную "preprocessor"
-	let preprocessor = 'sass'; // Выбор препроцессора в проекте - sass или less
+	let preprocessor = 'less'; // Выбор препроцессора в проекте - sass или less
 
 	// Определяем константы Gulp
 	const { src, dest, parallel, series, watch } = require('gulp');
