@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Engel</title>
 
     <!-- Подключаем стили проекта -->
     <link rel="stylesheet" href="css/app.min.css">
-
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin>
 </head>
 
 <body>
     <header class="page-header wrapper">
-        <div class="page-header__wrapper">
-            <a class="page-header__logo">Доктор Энгель</a>
-            <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="page-header__wrapper wrapper-in">
+            <!-- main-nav--closed main-nav--nojs -->
+            <nav class="main-nav">
                 <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
                 </button>
+                <a class="page-header__logo">Доктор Энгель</a>
                 <ul class="main-nav__list list-style">
                     <li class="main-nav__item main-nav__item--active">
                         <a>Главная</a>
