@@ -3,12 +3,12 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Oxigen"), url("../fonts/oxigenregular.woff2") format("woff2"), url("../fonts/oxigenregular.woff") format("woff");
+  src: local("Oxigen"), url("../fonts/Oxigen-Regular.ttf") format("ttf"), url("../fonts/oxigenregular.woff") format("woff");
 }
 @font-face {
   font-family: Lora;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Oxigen"), url("../fonts/loraregular.woff2") format("woff2"), url("../fonts/loraregular.woff") format("woff");
+  src: local("Oxigen"), url("../fonts/Lora-Regular.ttf") format("ttf"), url("../fonts/LoraRegular.woff") format("woff");
 }
