@@ -1,3 +1,8 @@
+.featured-posts__header {
+  text-align: center;
+  margin-top: 60px;
+  font-family: ;
+}
 .featured-post__list {
   display: flex;
   justify-content: space-between;
