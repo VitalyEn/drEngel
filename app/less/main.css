@@ -59,6 +59,9 @@ a {
     //border-bottom: 2px solid #665aff;
   }*/
 }
+ul {
+  list-style: none;
+}
 .form fieldset {
   border: none;
 }
@@ -87,6 +90,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .wrapper-in {
@@ -206,7 +210,7 @@ a {
   font-size: 17px;
   line-height: 20px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.63);
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -370,4 +374,91 @@ a {
   .main-nav__item--form a {
     color: #000000;
   }
+}
+.featured-posts__header {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Oxigen", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 2px;
+}
+.featured-posts__line {
+  height: 1px;
+  width: 188px;
+  margin: auto;
+  margin-bottom: 16px;
+  background-color: #dedede;
+}
+.featured-post__list {
+  display: flex;
+  justify-content: space-between;
+}
+.featured-post__container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 460px;
+  height: 280px;
+}
+.featured-post__image {
+  width: 100%;
+}
+.featured-post__header {
+  position: absolute;
+  left: 20px;
+  bottom: 93px;
+  margin: 0;
+  font-family: "Lora", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  font-style: normal;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.featured-post__slogan {
+  position: absolute;
+  left: 20px;
+  bottom: 62px;
+  margin: 0;
+  font-family: "Oxigen", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+.featured-post__author {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  margin: 0;
+  font-family: "Oxigen", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 35px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+.featured-post__date {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  margin: 0;
+  font-family: "Oxigen", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 35px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+.featured-posts__header {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Oxigen", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 2px;
 }
