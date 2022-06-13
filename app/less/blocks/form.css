@@ -1,0 +1,16 @@
+.page-footer__form {
+  margin: auto;
+}
+.form__input {
+  margin-left: 220px;
+  margin-bottom: 90px;
+  padding-left: 35px;
+  height: 50px;
+  width: 375px;
+}
+.form__button {
+  height: 50px;
+  width: 125px;
+  margin-left: -5px;
+  border-radius: 0 3px 3px 0;
+}
