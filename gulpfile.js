@@ -58,7 +58,7 @@
 	    watch('app/**/' + preprocessor + '/**/*', styles);
 
 	    // Мониторим файлы HTML на изменения
-	    watch('app/**/*.html').on('change', browserSync.reload);
+	    watch('app/*.html').on('change', browserSync.reload);
 
 	    // Мониторим папку-источник изображений и выполняем images(), если есть изменения
 	    watch('app/images/src/**/*', images);
@@ -100,6 +100,7 @@
 	            'app/js/**/*.min.js',
 	            'app/images/dest/**/*',
 	            'app/**/*.html',
+	            'app/*/html'
 	        ], { base: 'app' }) // Параметр "base" сохраняет структуру проекта при копировании
 	        .pipe(dest('dist')) // Выгружаем в папку с финальной сборкой
 	}
