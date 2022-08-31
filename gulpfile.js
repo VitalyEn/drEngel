@@ -96,6 +96,7 @@
 
 	function buildcopy() {
 	    return src([ // Выбираем нужные файлы
+	            'app/fonts/*.*',
 	            'app/css/**/*.min.css',
 	            'app/js/**/*.min.js',
 	            'app/images/dest/**/*',
